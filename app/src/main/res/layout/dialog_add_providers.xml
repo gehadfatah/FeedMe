@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:typeFace="@{@string/font_medium}"
+        android:hint="@string/enter_rss_name"/>
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/etLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:typeFace="@{@string/font_medium}"
+        android:hint="@string/enter_rss_link"/>
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        app:typeFace="@{@string/font_bold}"
+        android:text="@string/add"/>
+</LinearLayout>
+</layout>
